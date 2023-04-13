@@ -1,1 +1,756 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Oswald:wght@300;400&family=Playfair+Display&display=swap');
+/* FONT CSS SYNTAX
+font-family: 'Bodoni Moda', serif;
+font-family: 'Playfair Display', serif;
+
+*/
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+
+header {
+    border-bottom: 10px solid rgb(228, 195, 151);
+    margin:0;
+    padding: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+    z-index: 1000;
+}
+img {
+    width: 150px;
+
+}
+
+div {
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    font-family: 'Bodoni Moda', serif;
+    margin: 0;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: rgb(200, 169, 95);
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, .5); */
+    font-size: 1.5rem;
+    
+}
+
+/*  ----------- Universals ----------- */
+.basicButton {
+  /* border: 2px solid rgb(200, 169, 95);
+   */
+   border: none;
+  
+  background-color: rgb(228, 195, 151);
+  color: white;
+  border-radius: 15px;
+  padding: 0.5rem 0.75rem;
+}
+.editButton {
+  background-color: rgb(168, 240, 218);
+  color: rgb(53, 53, 53);
+  /* border: 2px solid rgb(74, 185, 152); */
+  border: none;
+}
+.deleteButton {
+  background-color: #c5615a;
+  /* border: 2px solid #7c2d28; */
+  border: none;
+
+}
+
+.hoverButton:hover {
+  opacity: 75%;
+}
+
+.hoverButton:active {
+  opacity: 45%;
+}
+
+
+
+
+
+/* ------------------------------------ */
+
+
+.headList {
+  border-radius: 50%;
+  transition: transform 3s ease-in-out,
+                border-radius 1s;
+  background-color: white;
+}
+
+.headList:hover {
+  color: white;
+    background-color: rgb(200, 169, 95);
+    border-radius: 0; 
+    /* border-radius: 50%;  ---------------------------------------------------------*/
+}
+
+hr {
+    height: 15px;
+    background-color: rgb(228, 195, 151);
+    width: 100%;
+}
+
+.boxMaker {
+  box-shadow: 2px 2px 15px rgba(0,0,0,.25);
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.navUl {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 2px;
+    background-color:rgb(228, 195, 151);
+    height: 90%;
+    margin-right: 0;
+    padding-right: 0;
+}
+.dividerThick {
+  width: 2px;
+  background-color:rgb(228, 195, 151);
+  height: 500px;
+  margin: 10px;
+  padding: 0;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.bodyContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* ----------------------------------------*/
+    grid-template-rows: .5fr 0.1fr 1fr;
+}
+
+.one {
+
+    background-color: red;
+}
+
+.stellaWord {
+    height: auto;
+    width: 434px;
+    margin-left: -36px;
+    padding-left: 0;
+}
+
+.stellaWord2 {
+    background-color: rgb(200, 169, 95);
+    width: 400px;
+    text-align: right;
+    padding: 0 1rem;
+    color: white;
+    font-size: 5rem;
+}
+
+/*  */
+
+.businessPopIn {
+    font-family: 'Bodoni Moda', serif;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-out,
+        border-radius 0.5s,
+        box-shadow 0.5s,
+        padding 0.5s;
+    grid-column: 5;
+    grid-row: 1;
+    background-color: rgb(36 148 116);
+    padding: 0 25px;
+    border-radius: 0 0 50px 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: white;
+    z-index: 100;
+    position: relative;
+    height: 70px;
+  }
+
+.businessPopIn:hover {
+    transform: scale(1.1) translate(-10px);
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 1px 5px 15px rgba(0,0,0,0.75);
+    padding: 20px;
+  }
+
+  .businessPopIn a {
+    font-size: 1.2em;
+    color: white;
+  }
+
+  /* Featured */
+
+  .featured {
+    grid-column: span 2;
+    grid-row: 1;
+    display: flex;
+    /* border-bottom: 2px solid black; */
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .underclass {
+    z-index: 0;
+    position: absolute;
+  }
+
+  .fImage1 {
+    height: 650px;
+    width: auto;
+    border-radius: 15px;
+    position: absolute;
+    
+    z-index: 0;
+  }
+
+  .fImage2 {
+    width: 473px;
+    height: 352px;
+    border-radius: 15px;
+    position: relative;
+    left: 9rem;
+    top: 6rem;
+    z-index: 2;
+  }
+
+  .fImage3 {
+    width: 540px;
+    height: 376px;
+    border-radius: 15px;
+
+    position: absolute;
+    z-index: 1;
+
+  }
+
+  .overlord {
+    z-index: 101;
+    position: relative;
+  }
+
+  .fImage4 {
+    grid-row: 1;
+    width: 900px;
+    height: 600px;
+    z-index: 10;
+    position: relative; 
+    right: -30.2rem;
+    top: 8rem;
+  }
+
+  .ftextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    /* background-color: rgba(250, 250, 250, 0.25); */
+    padding: 1rem;
+    margin: 0;
+    z-index: 4;
+  }
+
+  .fText {
+    font-family: 'Playfair Display', serif;
+    font-weight: 550;
+    grid-column: 3 span 4;
+    grid-row: 1;
+    padding-left: 3rem;
+    text-align: right;
+    align-items: center;
+    font-size: 4rem;
+  }
+
+  .featuredImg {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: 250px;
+    border-radius: 100rem 100rem 100rem 0;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .featuredBlurb {
+    grid-column: span 2;
+  }
+
+  /* Search */
+
+  .titleBanner {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(200, 169, 95);
+    width: 50%;
+    text-align: right;
+    padding: 0 1rem;
+    color: white;
+    font-size: 2rem;
+    grid-row: 2;
+    grid-column: span 5;
+    margin-top: 5rem;
+    border-radius: 0 5px 5px 0;
+}
+
+  .mapFinder {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .searchBarContainer {
+    margin: 0;
+    padding: 1rem;
+  }
+  .searchLabel {  
+    padding: 0.25rem 1.5rem;
+    color: white;
+    /* height: 50px; */
+    background-color: rgb(200, 169, 95);
+    border-radius: 50px 50px 0 0;
+    margin-right: 0;
+    font-size: 2rem;
+    font-family: 'Bodoni Moda', serif;
+  }
+  .searchBar {
+    border: 2px solid rgb(200, 169, 95);
+    height: 45px;
+    margin-left: -10px;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 15px;
+  }
+  .searchButton {
+    height: 50px;
+    padding: 0 1rem;
+    align-items: center;
+    color: white;
+    border-radius: 0 0 50px 50px ;
+    background-color: rgb(228, 195, 151);
+    border: 2px solid rgb(200, 169, 95);
+    transition-duration: 0.4s;
+    font-size: 1.5rem;
+    font-family: 'Bodoni Moda', serif;
+  }
+
+  .searchButton:hover {
+    background-color: rgb(200, 169, 95);
+  }
+
+  .searchButton:active {
+    color: black;
+    background-color: white;
+  }
+
+  .searchLocale {
+    grid-row: 3;
+    grid-column: span 5;
+    padding: 1rem;
+    
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(200, 200, 200, 0.5); */
+  }
+
+  .searchCards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 ;
+
+  }
+
+
+  .searchCard {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50rem;
+    box-shadow: 2px 2px 10px black;
+    transition: transform 1s ease-in-out;
+    margin: 1rem;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin: 4rem;
+    padding: 0;
+  }
+
+  .searchCard:hover {
+    transform: scale(1.5);
+    z-index: 100;
+    
+  }
+
+  .searchImg {
+    height: 300px;
+    width: auto;
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+    position: static;
+    z-index: 0;
+  }
+
+  .searchH {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 1px black;
+    padding: 0;
+    margin: 0;
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    display: flex;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    position: relative;
+  }
+
+  .searchH:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .businessTitle {
+    font-family: 'Bodoni Moda', serif;
+    background-color: rgb(200, 169, 95);
+    color: white;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    width: 35%;
+    text-align: right;
+    border-radius: 0 15px 15px 0;
+    padding-right: 1rem;
+  }
+
+  .businessLink {
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .squareCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .squareCard {
+    display: flex;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.25);
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 1rem;
+    transition: transform 0.5s, scale 0.25s;
+    text-align: left;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+  }
+
+  .squareCard:hover {
+    transform: scale(0.98);
+    color: rgba(0,0,0,0.75);
+  }
+
+  .squareCardDetails {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .squareCardDetailTwo {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+    width: 16rem;
+
+  }
+
+  .squareCardH2 {
+    margin-top: 0;
+    font-family: 'Bodoni Moda', serif;
+  }
+  
+
+  .pageLoadMore {
+    width: 150px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    margin: 2rem;
+    font-size: 1rem;
+    background-color: rgb(200, 169, 95);
+    color: white;
+    transition: transform 3s ease-in-out,
+                  border-radius 1s;
+  }
+
+  .pageLoadMore:hover {
+    border-radius: 0; 
+
+  }
+
+    
+  .headList:hover {
+    color: white;
+      background-color: rgb(200, 169, 95);
+      /* border-radius: 50%;  ---------------------------------------------------------*/
+  }
+
+
+  /* --------------- Detail -------------- */
+  .detailContainer {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2.5rem;
+  }
+
+  .detailPic {
+    border-radius: 25px;
+    height: 900px;
+    width: auto;
+  }
+
+  .rightDetailContainer {
+    height: 100%;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.25);
+    border-radius: 25px;
+    padding: 1rem;
+  }
+
+  .contactInfo {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bio {
+    padding: 1rem;
+  }
+
+  .work {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .workImg {
+    transition: transform 1s, scale .25s, border-radius, 0.75s;
+    border-radius: 0;
+  }
+
+  .workImg:hover {
+    transform: scale(3);
+    border-radius: 25px;
+    z-index: 105;
+
+  }
+
+  .detailContactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .detailContactForm label {
+    padding-top: 1rem;
+  }
+
+  /* --------------------LOGIN -------------- */
+  .loginContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .indvlContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: center;
+  }
+
+  .logContainer {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+
+  }
+
+  .loginInput {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    /* margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; */
+  }
+  
+  .loginButton {
+    display: flex;
+    background-color: rgb(200, 169, 95);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.75s,
+      border-radius 0.5s;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .loginButton:hover, .cancelbtn:hover {
+    opacity: 0.8;
+    transform: scale3d(2);
+    border-radius: 0;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #c5615a;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    margin: 1rem;
+    transition: transform 0.5s,
+        border-radius 0.5s;
+  }
+  
+  
+  .psw {
+    /* float: right; */
+    padding-top: 16px;
+
+  }
+
+/*  ----------------------------  Client Dash */
+  .dashInput {
+    width: 85%;
+    height: 40px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+
+  
+
+  .clientDashContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileImg {
+    height: 400px;
+    width: auto;   
+    border-radius: 25px; 
+  }
+
+  .subCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subCard {
+    width: 350px;
+
+  }
+
+
+  /*  ---------------------SearchMain */
+  .searchArea {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .searchInput {
+    width: 50%;
+    height: 40px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+    font-size: 2rem;
+  }
+  .searchImgMain {
+    width: 100%;
+    height: auto;
+  }
+
+  /*  --------- Footer -------------- */
+
+
+
+  footer {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    background-color: rgb(228, 195, 151);
+  }
