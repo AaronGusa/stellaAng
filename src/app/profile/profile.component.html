@@ -1,0 +1,15 @@
+<div class="tab-container bigBoxMaker">
+    <ul class="tab-list navUl">
+      <li class="headList nav-link" (click)="selectTab(1)" [class.active]="selectedTab === 1">My Profile</li>
+      <li class="headList nav-link" (click)="selectTab(2)" [class.active]="selectedTab === 2">My Business</li>
+      <li class="headList nav-link" (click)="selectTab(3)" [class.active]="selectedTab === 3">Admin</li>
+    </ul>
+    <div class="tab-content">
+      <div *ngIf="selectedTab === 1"><app-client-profile></app-client-profile>
+      </div>
+      <div *ngIf="selectedTab === 2"><app-businesses></app-businesses>
+      </div>
+      <div *ngIf="selectedTab === 3"><app-admin-profile></app-admin-profile>
+      </div>
+    </div>
+  </div>

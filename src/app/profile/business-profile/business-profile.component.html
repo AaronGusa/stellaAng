@@ -1,0 +1,18 @@
+<div class="business-profile">
+    <div class="profile-image">
+      <img src="../../../assets/images/stocks/shrunk/alvin-mahmudov-sYIqGW3hufI-unsplash.webp" alt="Business Profile Image">
+    </div>
+    <div class="profile-details">
+      <h2>{{ id.businessName }}</h2>
+      <p><strong>Owner Name:</strong> {{ id.ownerName }}</p>
+
+      <p><strong>Preferred List Name:</strong> {{ id.preferredListName }}</p>
+      <p><strong>Address:</strong> {{ id.address }}</p>
+      <p><strong>Phone:</strong> {{ id.phone }}</p>
+      <p><strong>Email:</strong> {{ id.email }}</p>
+      <div class="profile-buttons">
+        <button (click)="onUpdateBusiness()">Update Business Info</button>
+        
+      </div>
+    </div>
+  </div>

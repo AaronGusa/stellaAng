@@ -115,11 +115,37 @@ hr {
     width: 100%;
 }
 
-.boxMaker {
+.bigBoxMaker {
+  box-shadow: 2px 2px 15px rgba(0,0,0,.25);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  height: fit-content;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.lilBoxMaker {
   box-shadow: 2px 2px 15px rgba(0,0,0,.25);
   border-radius: 25px;
   padding: 1rem;
   margin: 1rem;
+  
+}
+
+.collapsed {
+  /* Set height of card container to 0 when collapsed */
+  height: 0;
+}
+
+.collapseCarrot {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.rotated {
+  /* Add styles for the rotated arrow icon when collapsed */
+ transform: rotate(180deg);
 }
 
 .navUl {
@@ -137,10 +163,11 @@ hr {
 .divider {
     width: 2px;
     background-color:rgb(228, 195, 151);
-    height: 90%;
+    height: 100%;
     margin-right: 0;
     padding-right: 0;
 }
+
 .dividerThick {
   width: 2px;
   background-color:rgb(228, 195, 151);
@@ -153,8 +180,6 @@ hr {
     display: flex;
     justify-content: space-around;
 }
-
-
 
 .logo {
   transition: transform 3s;
@@ -698,6 +723,15 @@ hr {
 
   }
 
+/*  ----------------------------  Profile */
+
+.tab-list {
+  color: #c5615a;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
 /*  ----------------------------  Client Dash */
   .dashInput {
     width: 85%;
@@ -711,35 +745,46 @@ hr {
 
   .clientDashContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
   }
 
-  .profileContainer {
+  
+
+  .profileImgContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   .profileImg {
     height: 400px;
     width: auto;   
     border-radius: 25px; 
+    margin: 1rem;
   }
 
-  .subCardContainer {
+  .cardHead {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+  .subCardContainer, .favCardContainer, .revCardContainer, .profCardContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: height 2s ease-in-out;
   }
 
   .subCard {
-    width: 350px;
-
+    width: 100%;
+    
   }
 
+  /* -----------------------------------------  */
 
+  
   /*  ---------------------SearchMain */
   .searchArea {
     display: flex;

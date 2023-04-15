@@ -11,6 +11,14 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ClientProfileComponent } from './profile/client-profile/client-profile.component';
+import { BusinessProfileComponent } from './profile/business-profile/business-profile.component';
+import { AdminProfileComponent } from './profile/admin-profile/admin-profile.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { BusinessesComponent } from './businesses/businesses.component';
+import { BusinessSnapComponent } from './businesses/business-snap/business-snap.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +30,15 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     FooterComponent,
     LoginComponent,
-    AboutComponent
+    AboutComponent,
+    ProfileComponent,
+    ClientProfileComponent,
+    BusinessProfileComponent,
+    AdminProfileComponent,
+    ErrorPageComponent,
+    BusinessesComponent,
+    BusinessSnapComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
