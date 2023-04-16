@@ -1,1 +1,117 @@
-<p>admin-profile works!</p>
+<!-- <p>admin-profile works!</p> -->
+<div>
+
+    <div class="cardHead" (click)="toggleSiteCard()">
+        <h2>Site Data</h2>
+        <a class="collapseCarrot" [class.rotated]="isSiteCardCollapsed">🥕</a>
+    </div>
+    
+    <div class="CardContainer" [class.collapsed]="isSiteCardCollapsed">
+        <br><div class="bigBoxMaker">
+            <div class="cardHead" (click)="toggleTagCard()">
+                <h3>Category Count: 2</h3>
+                <a class="collapseCarrot" [class.rotated]="isTagCardCollapsed">🥕</a>
+            </div>
+            <div class="CardContainer" [class.collapsed]="isTagCardCollapsed">
+                <!-- Display category count data here -->
+                <br>
+                <p>Categories: Web Design, Plumbing</p>
+            </div>
+        </div>
+        <div class="bigBoxMaker">
+            <div class="cardHead" (click)="toggleRevCard()">
+                <h3>Review Count: 4</h3>
+                <a class="collapseCarrot" [class.rotated]="isRevCardCollapsed">🥕</a>
+            </div>  
+        <div class="CardContainer" [class.collapsed]="isRevCardCollapsed">
+            <!-- Display review count data here -->
+            <ul>
+            <li>
+                <p>Business: ABC Plumbing</p>
+                <p>Reviewer: John Doe</p>
+                <p>Review: "Great service, highly recommended!"</p>
+                <p>Rating: 5 stars</p>
+            </li>
+            <li>
+                <p>Business: XYZ Web Design</p>
+                <p>Reviewer: Jane Smith</p>
+                <p>Review: "Excellent website, very professional!"</p>
+                <p>Rating: 4 stars</p>
+            </li>
+            <li>
+                <p>Business: XYZ Web Design</p>
+                <p>Reviewer: Bob Johnson</p>
+                <p>Review: "Average service, could be better."</p>
+                <p>Rating: 3 stars</p>
+            </li>
+            <li>
+                <p>Business: ABC Plumbing</p>
+                <p>Reviewer: Sarah Adams</p>
+                <p>Review: "Prompt response, reasonable prices."</p>
+                <p>Rating: 4 stars</p>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div class="bigBoxMaker">
+            <div class="cardHead" (click)="togglePerfCard()">
+                <h3>Business Performance Metrics</h3>
+                <a class="collapseCarrot" [class.rotated]="isPerfCardCollapsed">🥕</a>
+            </div>
+        <div class="CardContainer" [class.collapsed]="isPerfCardCollapsed">
+            <!-- Display business performance metrics data here -->
+            <br>
+            <p>Click-through rate: 3%</p>
+            <p>Conversion rate: 2%</p>
+            <p>Engagement rate: 4%</p>
+        </div>
+        </div>
+        <div class="bigBoxMaker">
+        <div class="cardHead" (click)="toggleUsersCard()">
+            <h3>User Management</h3>
+            <a class="collapseCarrot" [class.rotated]="isUsersCardCollapsed">🥕</a>
+        </div>
+        <div class="CardContainer" [class.collapsed]="isUsersCardCollapsed">
+            <!-- Display user management data here -->
+            <br>
+            <p>Total Users: 50</p>
+            <p>Admin Users: 5</p>
+            <p>Regular Users: 45</p>
+        </div>
+        </div>
+        <div class="bigBoxMaker">
+        <div class="cardHead" (click)="toggleBusVerCard()">
+        
+            <h3>Business Verification</h3>
+            <a class="collapseCarrot" [class.rotated]="isBusVerCardCollapsed">🥕</a>
+        </div>
+        <div class="CardContainer" [class.collapsed]="isBusVerCardCollapsed">
+            <!-- Display business verification data here -->
+            <ul>
+            <li>
+                <p>Business: ABC Plumbing</p>
+                <p>Status: Verified</p>
+            </li>
+            <li>
+                <p>Business: XYZ Web Design</p>
+                <p>Status: Not Verified</p>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div class="bigBoxMaker">
+            <div class="cardHead" (click)="toggleAdRevCard()">
+                <h3>Ad Revenue</h3>
+                <a class="collapseCarrot" [class.rotated]="isAdRevCardCollapsed">🥕</a>
+            </div>
+            <div class="CardContainer" [class.collapsed]="isAdRevCardCollapsed">
+            <!-- Display ad revenue data here -->
+            <br>
+            <p>Total Ad Impressions: 100,000</p>
+            <p>Total Ad Clicks: 1,000</p>
+            <p>Total Ad Revenue: $500</p>
+            <p>Top Advertiser: XYZ Company</p>
+            </div>
+        </div>
+    </div>
+</div>

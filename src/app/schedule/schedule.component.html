@@ -1,35 +1,13 @@
 <p>schedule works!</p>
-<table id="calendar">
-    <thead>
-      <tr>
-        <th>Sun</th>
-        <th>Mon</th>
-        <th>Tue</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>1</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-      </tr>
-      <!-- Add more rows for additional weeks in the month as needed -->
-    </tbody>
-  </table>
+<div class="calendar">
+    <div class="calendar-header">
+      <button (click)="prevMonth()">&lt;</button>
+      <h2>{{ monthNames[currentDate.getMonth()] }} {{ currentDate.getFullYear() }}</h2>
+      <button (click)="nextMonth()">&gt;</button>
+    </div>
+    <div class="calendar-body">
+      <div class="calendar-cell" *ngFor="let day of daysInMonth; let i = index" 
+        [ngClass]="{'current-day': isCurrentDay(day), 'selected': isSelectedDay(day), 'disabled': isDisabledDay(day)}" 
+        (click)="selectDate(day)">{{ day }}</div>
+    </div>
+</div>

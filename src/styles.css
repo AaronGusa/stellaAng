@@ -56,6 +56,19 @@ a {
     
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.stellaTitle {
+  background-color: rgb(200, 169, 95);
+  color: white;
+  margin: 0;
+  padding: 0 1rem;
+  font-weight: 100;
+  border-radius: 5px;
+}
+
 /*  ----------- Universals ----------- */
 .basicButton {
   /* border: 2px solid rgb(200, 169, 95);
@@ -816,3 +829,68 @@ hr {
     height: 4rem;
     background-color: rgb(228, 195, 151);
   }
+
+ /* Calendar Header */
+
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+.calendar-header .prev-month-btn,
+.calendar-header .next-month-btn {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Calendar Body */
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+.calendar-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-cell:hover {
+  background-color: #efefef;
+}
+
+.calendar-cell.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Calendar Cell (Empty) */
+.calendar-cell.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.bCalProf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.calendar {
+  grid-column: 2;
+}
