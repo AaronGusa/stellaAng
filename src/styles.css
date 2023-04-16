@@ -56,9 +56,9 @@ a {
     
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
-}
+} */
 
 .stellaTitle {
   background-color: rgb(200, 169, 95);
@@ -67,7 +67,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 1rem;
   font-weight: 100;
   border-radius: 5px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.25rem;
 }
+
+
 
 /*  ----------- Universals ----------- */
 .basicButton {
@@ -101,7 +105,10 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 45%;
 }
 
-
+.padded {
+  margin: 0;
+  padding: 1rem 3rem !important;
+}
 
 
 
