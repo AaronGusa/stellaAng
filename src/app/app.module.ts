@@ -19,6 +19,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { BusinessesComponent } from './businesses/businesses.component';
 import { BusinessSnapComponent } from './businesses/business-snap/business-snap.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { BusinessRecComponent } from './businesses/business-rec/business-rec.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     ErrorPageComponent,
     BusinessesComponent,
     BusinessSnapComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    BusinessRecComponent
   ],
   imports: [
     BrowserModule,
