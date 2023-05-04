@@ -1,7 +1,7 @@
 {
   "name": "stella-ang",
   "version": "0.0.0",
-  "main": "app/ts",
+  "main": "app.ts",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
