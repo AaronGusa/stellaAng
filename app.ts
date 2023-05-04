@@ -9,6 +9,7 @@ const cors = require('cors');
 //calls
 const app = express();
 const port = process.env.PORT || 3000;
+app.set('port', port);
 
 //import routing file
 app 
@@ -17,13 +18,13 @@ app
     .use('/', require('./backend/routes'))
     
 
-const start = async () => {
-    app.listen(port, () => {
-        if (app.listen) {
-            console.log(`Running on port ${port}`);
-        } else {
-            console.log(`error - not connected`);
-        }
-    })
-}
-start();
+// const start = async () => {
+//     app.listen(port, () => {
+//         if (app.listen) {
+//             console.log(`Running on port ${port}`);
+//         } else {
+//             console.log(`error - not connected`);
+//         }
+//     })
+// }
+// start();
